@@ -1,11 +1,11 @@
-# 658. Find K Closest Elements
+//# 658. Find K Closest Elements
+//
+//# time complexity: O(log(n) + k) k is the length of output.
+//# space complexity: O(k) by using list in length of k.
+//
+//# 错误点： 对 binarySearch collecton 不熟悉. 浪费了大量时间。
 
-# time complexity: O(log(n) + k) k is the length of output.
-# space complexity: O(k) by using list in length of k.
-
-# 错误点： 对 binarySearch collecton 不熟悉. 浪费了大量时间。 
-
-
+import java.util.*;
 class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
         List<Integer> ans = new LinkedList<>(); 
